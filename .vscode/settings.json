@@ -1,0 +1,6 @@
+{
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page,js": "PAGE ${dirname}"
+  },
+  "workbench.editor.customLabels.enabled": true
+}
