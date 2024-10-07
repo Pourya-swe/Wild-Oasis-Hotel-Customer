@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Wild Oasis Customer - NextJs CapStone Project -
 
-## Getting Started
+**Intorduction**: Small Boutique hotel with 8 luxurious cabin with **Customer-Facing Web App** for customers to be able to book their own cabin and ect.
 
-First, run the development server:
+## Q1: What did I learn and practice here in this project?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To indicate to some of it I would say that I **learned** and **practice**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Setting up **NextJs Project** with `npx create-next-app` and getting familiar with folder structure and etc.
+- Creating **Routes & Pages** by using NextJs FrameWork convention.
+- Creating **Nested Routes** by using NextJs FrameWork convention.
+- Establishing Navigation between different **Routes** by using **next/link** library.
+- Creating **Root Layout** for entire WebApp which applies every single **Route**.
+- Fetching Data in a **React Server Component**.
+- Adding interactivity by using a **React Client Component** inside a **React Server Component**.
+- Showing **Loading indicator** by by using NextJs FrameWork convention **loading.js** whene ever one of the pages loads some data.
+- Passing props from **Server Component** to **Client Component**.
+- Project Oraganization & Planning
+- Adding static and dynamic **MetaData** to each individual pages.
+- Laoding & Optimizing Fonts.
+- Optimizing images with **NextJs Image Component**.
+- Responsive Images.
+- Nested Layouts.
+- Streaming Route segments with **loading.js** file.
+- Streaming UI with **Suspense**.
+- Error handling & Error Boundaries.
+- Different types of **SSR** static vs dynamic.
+- Making Dynamic Pages Static With **generateStaticParams**.
+- Partial pre-rendering.
+- **Cashing** & **ISR**.
+- Client & Server interaction Strategies.
+- Authentication with NextAuth.
+- Data Mutation with **Server Actions**.
+- Modern React Hooks - **useTransition** & **useOptimistic** -
+- Deployment with **vercel**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Q2: What features does this project have?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-➡️ CRUD operations (Create, Read, Update, Delete)\
+-➡️ Making Reservation\
+-➡️ Editing or Deleting Reservations through Geust Dashboard\
+-➡️ Guest Dashboard (Profile, Reservation)\s
+-➡️ Updating Profile Info through Geust Dashboard(Profile, Reservation)\
+-➡️ About (View)\
+-➡️ Cabins List & Cabin page (View)\
+-➡️ Filtering (Cabins)\
+-➡️ Sign up with google account(NextAuth)
 
-## Learn More
+## Q3: What **Tech Stack** does this project have?
 
-To learn more about Next.js, take a look at the following resources:
+-➡️ React (Rendering & Core Features)\
+-➡️ TailWind (Styling)\
+-➡️ Context API (UI State Management)\
+-➡️ React-Icons (Icons)\
+-➡️ Date-Fns library (Date Manipulation)\
+-➡️ SupaBase service (Sotre Data - Remote State -, Authentication, & API Integration)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Q4: How to connect with me for any inquires related to these stuff?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+pourya.swe@gmail.com\
+[pouryavahedi.com](https://pouryavahedi.com/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Note**: Please note that I have not been able to bring everything that I learned and practiced in detail here in this document because I think that it stretches out of this context and your tolerance, but you are free and welcome to take look at the project yourself. Also I wrote some comments in the project itself that explains and indicate to some important things that I learned and practiced along the way.
