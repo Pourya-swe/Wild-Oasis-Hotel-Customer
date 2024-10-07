@@ -6,16 +6,6 @@ import { Suspense } from "react";
 
 // export const metadata = {};
 
-export async function generateStaticParams() {
-  const cabins = await getCabins();
-
-  const cabinIds = cabins.map((cabin) => {
-    cabinId: String(cabin.id);
-  });
-
-  return cabinIds;
-}
-
 export async function generateMetadata({ params }) {
   const { name } = await getCabin(params.cabinId);
 
@@ -23,6 +13,16 @@ export async function generateMetadata({ params }) {
     title: `Cabin ${name}`,
   };
 }
+
+// export async function generateStaticParams() {
+//   const cabins = await getCabins();
+
+//   const cabinIds = cabins.map((cabin) => {
+//     cabinId: String(cabin.id);
+//   });
+
+//   return cabinIds;
+// }
 
 async function Page({ params }) {
   // Note: Here We have a blocking waterfall, means we are fetching multiple pieces of data that don't depen on eachother but still blocking eachother.
