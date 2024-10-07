@@ -39,7 +39,7 @@ To indicate to some of it I would say that I **learned** and **practice**:
 -➡️ CRUD operations (Create, Read, Update, Delete)\
 -➡️ Making Reservation\
 -➡️ Editing or Deleting Reservations through Geust Dashboard\
--➡️ Guest Dashboard (Profile, Reservation)\s
+-➡️ Guest Dashboard (Profile, Reservation)\
 -➡️ Updating Profile Info through Geust Dashboard(Profile, Reservation)\
 -➡️ About (View)\
 -➡️ Cabins List & Cabin page (View)\
