@@ -1,7 +1,7 @@
 import Cabin from "@/app/_components/Cabin";
 import Reservation from "@/app/_components/Reservation";
 import Spinner from "@/app/_components/Spinner";
-import { getCabin, getCabins } from "@/app/_lib/data-service";
+import { getCabin } from "@/app/_lib/data-service";
 import { Suspense } from "react";
 
 // export const metadata = {};
@@ -14,25 +14,25 @@ export async function generateMetadata({ params }) {
   };
 }
 
+// Note: Will be a problem on deployment in vercel but not as SSG.
 // export async function generateStaticParams() {
 //   const cabins = await getCabins();
 
 //   const cabinIds = cabins.map((cabin) => {
 //     cabinId: String(cabin.id);
 //   });
-
 //   return cabinIds;
 // }
 
 async function Page({ params }) {
   // Note: Here We have a blocking waterfall, means we are fetching multiple pieces of data that don't depen on eachother but still blocking eachother.
-  // Note: One approach to fixing this is "Promise.all"
   const cabin = await getCabin(params.cabinId);
   // const settings = await getSettings();
   // const bookedDates = await getBookedDatesByCabinId(params.cabinId);
 
   // Note: Now it can be as fastest as the slowest promise, but it's not perfect yet.
   // Note: Better way is to instead of fetching all the data on the parent page we can create differnet bunch of components and then have each component fetch only the data that it needs and then those components can be streamed in as they become ready.
+  // Note: One approach to fixing this is "Promise.all"
   // const [cabin, settings, bookedDates] = await Promise.all([
   //   getCabin(params.cabinId),
   //   getSettings(),

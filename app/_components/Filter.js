@@ -4,8 +4,11 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 function Filter() {
+  // Reading Search params
   const searchParams = useSearchParams();
+  // Programmatic Navigation
   const router = useRouter();
+  // Reading the Path name => cabin list
   const pathname = usePathname();
   const activeFilter = searchParams.get("capacity") ?? "all";
 
